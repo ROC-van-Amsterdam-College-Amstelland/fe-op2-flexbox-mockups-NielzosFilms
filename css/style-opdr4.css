@@ -1,3 +1,58 @@
 html, body{
     height: 100%;
 }
+body{
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: green;
+    -ms-flex-align: start;
+}
+main {
+    background-color: orange;
+    height: 80%;
+    -ms-flex-align: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer {
+    background-color: white;
+    height:10%;
+    -ms-flex-align: end;
+    display: flex;
+}
+ul {
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    margin: 10px;
+}
+footer .left{
+    background-color: red;
+    width: 45%;
+    -ms-flex-align: start;
+}
+footer .middle{
+    background-color: white;
+    width: 10%;
+    -ms-flex-align: stretch;
+}
+footer .right{
+    background-color: blue;
+    width: 45%;
+    -ms-flex-align: end;
+}
+
+main .content {
+    width: 20%;
+    margin: 10px;
+}
+main .content img {
+    width: 100%;
+}
